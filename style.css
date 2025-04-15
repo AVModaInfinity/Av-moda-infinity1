@@ -1,0 +1,97 @@
+/* style.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+}
+#welcome-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #111;
+  text-align: center;
+}
+#welcome-screen input {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+#welcome-screen button {
+  padding: 10px 20px;
+  background-color: #d00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#welcome-screen button:hover {
+  background-color: #a00;
+}
+header {
+  background-color: #111;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 2px solid #d00;
+}
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #d00;
+}
+section {
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+.gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.product-placeholder {
+  width: 150px;
+  height: 200px;
+  background-color: #222;
+  border: 2px dashed #d00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.product-placeholder:hover {
+  transform: scale(1.05);
+}
+#spin-button {
+  padding: 10px 20px;
+  background-color: #d00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+#spin-button:hover {
+  transform: scale(1.1);
+  background-color: #a00;
+}
+#wheel-result {
+  margin-top: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #0f0;
+  transition: opacity 0.5s ease;
+}
