@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AV Moda Infinity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="pedirNombre()">
+  <header>
+    <h1 id="saludo"></h1>
+    <nav>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#promociones">Promociones</a>
+      <a href="#ruleta">Ruleta</a>
+      <a href="#sorteo">Sorteo</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="catalogo">
+      <h2>Catálogo de Productos</h2>
+      <p>Aquí podrás agregar tus fotos y descripciones de productos.</p>
+      <!-- Espacio para tus imágenes -->
+      <div class="galeria">
+        <!-- Aquí podrás subir tus fotos más adelante -->
+      </div>
+    </section>
+
+    <section id="promociones">
+      <h2>Promociones</h2>
+      <p>Aquí aparecerán tus promociones y descuentos actuales.</p>
+    </section>
+
+    <section id="ruleta">
+      <h2>¡Gira la ruleta y gana descuentos!</h2>
+      <canvas id="canvas" width="300" height="300"></canvas>
+      <br/>
+      <button onclick="girarRuleta()" id="btnGirar">Girar Ruleta</button>
+      <p id="resultado"></p>
+      <audio id="sonidoMoneda" src="https://www.myinstants.com/media/sounds/coin.mp3" preload="auto"></audio>
+    </section>
+
+    <section id="sorteo">
+      <h2>Participa en nuestro sorteo mensual</h2>
+      <p>Sube tu foto usando ropa de AV Moda Infinity y participa para ganar.</p>
+      <div class="participaciones">
+        <!-- Aquí se mostrarán las fotos de los clientes -->
+      </div>
+      <h3>Ganador del mes:</h3>
+      <p id="ganador-mes">Por anunciar</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>AV Moda Infinity - Presidente Prudente</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
